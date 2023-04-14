@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Me</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="sourcefile.js"></script>
+        <link rel="stylesheet" href="contactMe.css">
+    </head>
+    <body class="bg-image" style="background-image: url(desktop.jpg)">
+            <header>
+                <h1>Contact Me</h1>
+            </header>
+            <br>
+            <nav id="navigation">
+                <a href="HomePage.html">Home</a>&emsp;
+                <a href="AboutMe.html">About Me</a>&emsp;
+                <a href="MyWorks.html">My Works</a>&emsp;
+                <a href="MyProjects.html">My Projects</a>&emsp;
+                <a href="Subscription.html">Subscription</a>&emsp;
+                <a href="ContactMe.html">Contact Me</a>
+            </nav>
+            <br>
+            <br>
+            <main>
+                <br>
+                <h2>Contact Me Today</h2>
+                        <br>
+                        <input type="text" id="firstname" name="firstname" maxlength="20">
+                        <span id="span1">*</span>
+                        <br>
+                        <label for="firstname">Firstname</label>
+                        <br>
+                        <input type="text" id="lastname" name="lastname" maxlength="20">
+                        <span id="span2">*</span>
+                        <br>
+                        <label for="lastname">Lastname</label>
+                        <br>
+                        <input type="text" id="occupation" name="occupation" maxlength="20">
+                        <span id="span3">*</span>
+                        <br>
+                        <label for="lastname">Occupation (job)</label>
+                        <br>
+                        <input type="email" id="myemail" name="myemail">
+                        <span id="span4">*</span>
+                        <br>
+                        <label for="myemail">Email</label>
+                        <br>
+                        <input type="number" id="phone" name="phone" maxlength="10" pattern="[0-9]{10}" required>
+                        <span id="span5">*</span>
+                        <br>
+                        <label for="phone">Phone number</label>
+                        <br>
+                        <textarea name="comments" id="comments" rows="5" cols="50"></textarea>
+                        <br>
+                        <label for="comments">Questions / Comment</label>
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-primary" id="validate" onclick="validateTXT()">Validate</button>
+                        <button type="button" class="btn btn-primary" id="saveInfo" onclick="saveInfo()">Save Info</button>
+                        <button type="button" class="btn btn-primary" id="saveInfo" onclick="removeInfo()">Remove Info</button>
+                        <button type="button" class="btn btn-primary" id="submit">Submit</button>
+                        <br>
+                        <br>
+                        <br>
+            </main>
+
+            <footer>
+                <i style="color: white;">Copyright &copy 2023 Tianci Pang</i>
+                <br>
+            </footer>    
+    </body>
+</html>

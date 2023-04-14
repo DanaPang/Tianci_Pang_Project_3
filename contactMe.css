@@ -1,0 +1,33 @@
+
+    header {
+        text-align: center;
+        padding-top:0.1px; 
+        padding-bottom:0.1px;
+    }
+    footer {
+        text-align: center;
+    }
+    nav {
+        text-align: center;
+        font-weight: 600;
+    }
+    main {
+        background-color: white;
+        opacity: 0.6;
+        border-radius: 15px;
+        padding-left: 20px;
+        margin: 0px 80px 10px 80px;
+    }
+    a:link {
+        color: white;
+    }
+    a:visited {
+        color: lightsteelblue;
+    }
+    a:hover {
+        color:orange;  
+    }
+    header h1 {
+        color: white;
+        text-shadow: 2px 2px 2px lightskyblue;
+    }

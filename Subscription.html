@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Subscription</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="sourcefile.js"></script>
+        <style>
+            header {
+                text-align: center;
+                padding-top:0.1px; 
+                padding-bottom:0.1px;
+            }
+            footer {
+                text-align: center;
+            }
+            nav {
+                text-align: center;
+                font-weight: 600;
+            }
+            main {
+                background-color: white;
+                opacity: 0.6;
+                border-radius: 15px;
+                padding-left: 20px;
+                margin: 0px 80px 10px 80px;
+            }
+            a:link {
+                color: white;
+            }
+            a:visited {
+                color: lightsteelblue;
+            }
+            a:hover {
+                color:orange;  
+            }
+            header h1 {
+                color: white;
+                text-shadow: 2px 2px 2px lightskyblue;
+            }
+        </style>
+    </head>
+    <body class="bg-image" style="background-image: url(desktop.jpg)">
+            <header>
+                <h1>Subscription</h1>
+            </header>
+            <br>
+            <nav id="navigation">
+                <a href="HomePage.html">Home</a>&emsp;
+                <a href="AboutMe.html">About Me</a>&emsp;
+                <a href="MyWorks.html">My Works</a>&emsp;
+                <a href="MyProjects.html">My Projects</a>&emsp;
+                <a href="Subscription.html">Subscription</a>&emsp;
+                <a href="ContactMe.html">Contact Me</a>
+            </nav>
+            <br>
+            <br>
+            <main>
+                <br>
+                <h2>Subscribe My Page</h2>
+                <br>
+                <form action="processMyInput.php" method="post">
+                    <h5>What would you like to hear from us?</h5>
+                    <label for="checkbox1">New developments</label>
+                    <input type="checkbox" name="checkbox1" id="checkbox1" value="NewDevelopments">
+                    <br>
+                    <label for="checkbox2">Latest technologies</label>
+                    <input type="checkbox" name="checkbox2" id="checkbox2" value="LatestTechnology">
+                    <br>
+                    <label for="checkbox3">Discounts</label>
+                    <input type="checkbox" name="checkbox3" id="checkbox3" value="Discounts">
+                    <br>
+                    <h5>How often do you want to receive the email from us?</h5>
+                    <input type="radio" name="frequency1" id="frequency1" value="Monthly">
+                    <label for="frequency1">Monthly</label>
+                    <br>
+                    <input type="radio" name="frequency2" id="frequency2" value="Bi-weekly">
+                    <label for="course2">Bi-weekly</label>
+                    <br>
+                    <input type="radio" name="frequency3" id="frequency3" value="Weekly">
+                    <label for="course3">Weekly</label>
+                    <br>
+                    <br>
+                    <h5>On a scale from 1 to 10, how would you like to rate our website?</h5>
+                    <input type="range" max="10" oninput="showRangeNumber(this.value)"> 
+                    <p id="resultOfRange"></p>
+                    <br>
+                    <label for="yourEmail">Your Email:</label>
+                    <input type="email" id="yourEmail" name="yourEmail">
+                    <br>
+                    <br>
+                    <input type="submit" class="btn btn-primary" name="myButton" id="myButton" value="Submit">
+                </form>
+                <br>
+            </main>
+
+            <footer>
+                <i style="color: white;">Copyright &copy 2023 Tianci Pang</i>
+                <br>
+            </footer>    
+    </body>
+</html>
